@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>to</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section id="banner">
+      <a href="index.html"><img class="logo" src="img/logo.png" alt="" /></a>
+
+      <div class="banner-text">
+        <h1>Tohid Sahebi</h1>
+        <br />
+        <p>Welcome to my page</p>
+
+        <div class="banner-btn">
+          <a href="#aboutme"> <span></span> About me</a>
+          <a href="#skills"> <span></span> Read more</a>
+        </div>
+      </div>
+    </section>
+
+    <div id="sidenav">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#aboutme">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#hireme">Hire me</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="menuBtn">
+      <img src="img/menu-bar-icon.png" alt="" id="menu" />
+      <!-- <i class="fa-duotone fa-bars"></i> -->
+    </div>
+
+    <!-- About me -->
+
+    <section id="aboutme">
+      <div id="title-text">
+        <h1>About me</h1>
+        <div class="about-box">
+          <div class="single-about">
+            <p>
+              As a trained web developer and graphic designer, I have extensive experience creating commercial websites using various software packages. I have a strong work ethic and excellent problem-solving skills.I enjoy working autonomously and with a team. I am passionate about pursuing a career where I can share and expand my knowledge of web development.
+              
+            </p>
+          </div>
+          <div class="single-about">
+            <img src="img/tohid.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end of About me -->
+
+    <!-- skills -->
+    <section id="skills">
+      <div class="title-skills">
+        <h1>Skills</h1>
+        <div class="paragraph">
+          <p>
+            • Proficient in coding languages such as HTML, CSS, JavaScript and jQuery
+          </p>
+          <p>• Good understanding of server-side CSS</p>
+          <p>
+            • Experience with graphic design applications (e.g. Adobe Photoshop)
+          </p>
+
+          <p>• Excellent problem-solving skills</p>
+          <p>
+            • Effective communication with team members, bosses and clients
+          </p>
+          <p>• Good interpersonal skills</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- end of skills -->
+
+    <!-- hire me -->
+    <section id="hireme">
+        <div class="title-hire">
+          <h1>Hire me</h1>
+        </div>
+
+        <div class="container">
+            <div class="contact-box">
+                <div class="left"></div>
+                <div class="right">
+                    <h2>Contact me</h2>
+                    <input type="text" class="field" placeholder="Your Name">
+                    <input type="text" class="field" placeholder="Your Email">
+                    <input type="text" class="field" placeholder="Phone">
+                    <textarea placeholder="Message" class="field"></textarea>
+                    <button class="btn">Send</button>
+                </div>
+            </div>
+        </div>
+
+        
+    <!-- end of hire me -->
+
+    <script>
+      var menuBtn = document.getElementById("menuBtn");
+      var menu = document.getElementById("menu");
+      var sideNav = document.getElementById("sidenav");
+
+      menuBtn.onclick = function () {
+        if (sideNav.style.right == "-200px") {
+          sideNav.style.right = "0";
+          menu.src = "img/close.png";
+        } else {
+          sideNav.style.right = "-200px";
+          menu.src = "img/menu-bar-icon.png";
+        }
+      };
+    </script>
+  </body>
+</html>
